@@ -11,10 +11,10 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import streamlit as st
 
 
-loaded_model = pickle.load(open('C:/Users/Hp/Downloads/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
 # Load the tokenizer used during training
-with open('C:/Users/Hp/Downloads/tokenizer.pickle', 'rb') as handle:
+with open('tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 def predict_sentiment(review):
