@@ -47,5 +47,4 @@ def main():
            
     st.success(sentiment) 
 
-if __name__ == '__main__':
-    main()
+main()
